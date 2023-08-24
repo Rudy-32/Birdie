@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cage and Bird</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        
+        .container {
+            width: 381px; 
+            height: 200px; 
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .small-image {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+        <p class="text-lg font-semibold text-gray-800">
+           Birdie Is imprisoned in some magical cage. <br>
+           In order to free it you need a spell to make the cage vanish.
+        <br>
+
+           hint: <a target="_blank" style="color:#3b82f7;" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">Check this link</a>
+                </p>
+        <div id="container" class="container">
+            <img class="small-image" id="image" src="cage.png" alt="Cage">
+            <img class="small-image" src="bird.png" alt="bird">
+        </div>
+
+        <div class="mt-6">
+            <input id="command-input" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" type="text" placeholder="Enter commands">
+            
+        </div>
+
+        <div id="success-message" class="hidden mt-4 text-green-500 font-semibold animate-fade-in">Correct!</div>
+    </div>
+
+    <script src="script2.js">
+        //Sneaky Aren't you ? check the javascript file my robot friend B-64 left a message
+    </script>
+</body>
+</html>
